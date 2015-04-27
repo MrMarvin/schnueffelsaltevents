@@ -1,1 +1,1 @@
-gelfHandler>=0.1.1
+-e git+https://github.com/MrMarvin/gelfHandler@master-ng#egg=gelfHandler
