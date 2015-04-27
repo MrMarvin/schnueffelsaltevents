@@ -8,4 +8,6 @@ setup(name='schnueffelsaltevents',
       author_email='marvin.frick@sinnerschrader.com',
       license='BSD',
       packages=['schnueffelsaltevents'],
+      dependency_links=['https://github.com/MrMarvin/gelfHandler/tarball/master-ng'],
+      scripts=['bin/schnueffel-salt-events'],
       zip_safe=False)

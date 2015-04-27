@@ -5,7 +5,7 @@ import argparse
 import logging
 import gelfHandler
 
-from .schnueffelstueck import *
+from schnueffelsaltevents.schnueffelstueck import *
 
 def parse_args():
   epilog = """
