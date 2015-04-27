@@ -1,0 +1,3 @@
+# Default values as environment variables to be used by upstart. See the bin/schnueffel-salt-events script for full list of available parameters.
+# Uncomment / change the line below.
+#SSE_PARAMETERS="--log_host localhost --log_port 12201 --log_proto TCP"
