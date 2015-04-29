@@ -44,7 +44,7 @@ schnueffel-salt-events --log_host graylog2.example.com -d
 Packaging
 ==========
 We used `fpm` to build SchnueffelSaltEvents into a .deb package for convinient distribution and versioning.
-The full command is rather long but takes into account correct maintainer email, dependencies and even upstart scripts.
+The full command is rather long but takes into account correct maintainer email, dependencies, corrects python lib path for system installations and even upstart scripts. This was tested on Ubuntu 14.04.
 ```
-fpm -s python -t deb -m $GIT_AUTHOR_EMAIL -d python-gelfhandler --deb-upstart integration/upstart/schnueffel-salt-events.conf --deb-default integration/upstart/schnueffel-salt-events ./setup.py
+fpm -s python -t deb -m $GIT_AUTHOR_EMAIL --python-install-lib /usr/lib/python2.7/dist-packages --deb-upstart integration/upstart/init/schnueffel-salt-events --deb-default integration/upstart/defaults/schnueffel-salt-events ./setup.py
 ```

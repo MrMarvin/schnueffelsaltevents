@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='schnueffelsaltevents',
-      version='0.43',
+      version='0.44',
       description='Attaches to a salt-masters event bus and logs all events to a (remote) log collecter',
       url='https://github.com/MrMarvin/schnueffelsaltevents',
       author='Marvin Frick',
